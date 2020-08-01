@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a  new page</title>
+</head>
+<body>
+<script>
+	document.write('afterbegin','<div id="div"></div>');
+
+function addStyles(element,styles){
+  for(id in styles){
+    element.style[id] = styles[id];
+  }
+}
+
+var nFilter = document.getElementById('div');
+var styles = {
+  color: "red"
+  ,width: "100px"
+  ,height: "100px"
+  ,display: "block"
+  ,border: "1px solid blue"
+}
+addStyles(nFilter,styles);
+</script>>
+
+</body>
+</html>>

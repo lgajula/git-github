@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["number"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="name" maxlength="5">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
